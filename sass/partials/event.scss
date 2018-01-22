@@ -35,3 +35,33 @@
     }
   }
 }
+
+@media (max-width: 815px) {
+  .event {
+    .event-left {
+      margin-left: 15px;
+    }
+    .event-right {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 616px) {
+  .event {
+    text-align: center;
+    height: auto;
+    padding: 0 10px 20px 10px;
+    .event-left {
+      margin-left: 0;
+      float: none;
+    }
+    .event-right {
+      margin-right: 0;
+      float: none;
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+}

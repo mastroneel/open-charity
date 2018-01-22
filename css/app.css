@@ -10,6 +10,9 @@
 @font-face {
   font-family: 'Open Sans';
   src: url("../assets/fonts/OpenSans-Regular.ttf"); }
+* {
+  box-sizing: border-box; }
+
 body {
   padding: 0;
   margin: 0; }
@@ -218,5 +221,79 @@ h5, p {
       height: 40px;
       width: 104px;
       text-transform: uppercase; }
+
+@media (max-width: 815px) {
+  .event .event-left {
+    margin-left: 15px; }
+  .event .event-right {
+    margin-right: 15px; } }
+@media (max-width: 616px) {
+  .event {
+    text-align: center;
+    height: auto;
+    padding: 0 10px 20px 10px; }
+    .event .event-left {
+      margin-left: 0;
+      float: none; }
+    .event .event-right {
+      margin-right: 0;
+      float: none; }
+      .event .event-right button {
+        margin-top: 10px; } }
+.get-involved {
+  text-align: center;
+  padding-bottom: 40px; }
+  .get-involved h1 {
+    color: #565659;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-top: 40px; }
+  .get-involved p {
+    color: #565659;
+    font-size: 14px; }
+  .get-involved .flex-grid {
+    display: flex; }
+    .get-involved .flex-grid .col {
+      flex: 1; }
+  .get-involved .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+    margin-right: 165px; }
+    .get-involved .flex-grid-thirds .col {
+      width: 32%; }
+    .get-involved .flex-grid-thirds h1 {
+      font-size: 16px; }
+  .get-involved img {
+    height: 120px; }
+  .get-involved button {
+    height: 40px;
+    width: 205px;
+    background: transparent;
+    color: #5dc2c5;
+    font-family: 'Museo 500';
+    text-transform: uppercase;
+    border: 1px solid #5dc2c5;
+    border-radius: 2px;
+    font-size: 14px; }
+  .get-involved .flex-grid {
+    margin: 0 0 20px 0; }
+  .get-involved .col {
+    padding: 20px; }
+
+@media (max-width: 1165px) {
+  .get-involved .flex-grid-thirds {
+    margin: 0 40px; } }
+@media (max-width: 921px) {
+  .get-involved .flex-grid-thirds {
+    margin: 0; } }
+@media (max-width: 817px) {
+  .get-involved .flex-grid,
+  .get-involved .flex-grid-thirds {
+    display: block; }
+    .get-involved .flex-grid .col,
+    .get-involved .flex-grid-thirds .col {
+      width: 100%;
+      margin: 0 0 10px 0; } }
 
 /*# sourceMappingURL=app.css.map */

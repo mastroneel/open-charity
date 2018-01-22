@@ -1,0 +1,81 @@
+.get-involved {
+  text-align: center;
+  padding-bottom: 40px;
+  h1 {
+    color: $dark-gray;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-top: 40px
+  }
+  p {
+    color: $dark-gray;
+    font-size: 14px;
+  }
+  .flex-grid {
+    display: flex;
+    .col {
+      flex: 1;
+    }
+  }
+  .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+    margin-right: 165px;
+    .col {
+      width: 32%;
+    }
+    h1 {
+      font-size: 16px;
+    }
+  }
+  img {
+    height: 120px;
+  }
+  button {
+    height: 40px;
+    width: 205px;
+    background: transparent;
+    color: #5dc2c5;
+    font-family: 'Museo 500';
+    text-transform: uppercase;
+    border: 1px solid #5dc2c5;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+  .flex-grid {
+    margin: 0 0 20px 0;
+  }
+  .col {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1165px) {
+  .get-involved {
+    .flex-grid-thirds {
+      margin: 0 40px;
+    }
+  }
+}
+
+@media (max-width: 921px) {
+  .get-involved {
+    .flex-grid-thirds {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 817px) {
+  .get-involved {
+    .flex-grid,
+    .flex-grid-thirds {
+      display: block;
+      .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+}
