@@ -2,6 +2,8 @@
 @import 'variables';
 
 // Import fonts
+@import '../node_modules/font-awesome/scss/font-awesome';
+
 @font-face {
   font-family: 'Museo 500';
   src: url("../assets/fonts/MuseoSans_500.otf");
@@ -47,6 +49,10 @@ a, a:hover, a:visited {
 
 h5, p {
   font-family: 'Open Sans Light', Helvetica, sans-serif;
+}
+
+button:focus {
+  outline: none;
 }
 
 // Import page sections
