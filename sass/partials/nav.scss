@@ -1,0 +1,172 @@
+@import '../variables';
+// Mobile nav
+.nav-mobile {
+  height: 80px;
+  background-color: $white;
+  .nav-left {
+    float: left;
+    img {
+      width: 120px;
+      margin-left: 40px;
+      margin-top: 25px;
+    }
+  }
+  .nav-right {
+    body {
+      -webkit-animation: bugfix infinite 1s; }
+      @-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}
+    }
+    #overlay-button {
+      position: absolute;
+      right: 20px;
+      top: 6px;
+      padding: 26px 11px;
+      z-index: 5;
+      cursor: pointer;
+      user-select: none;
+      span {
+        height: 4px;
+        width: 35px;
+        border-radius: 2px;
+        background-color: $dark-gray;
+        position: relative;
+        display: block;
+        transition: all .2s ease-in-out;
+        &:before {
+          top: -10px;
+          visibility: visible;
+        }
+        &:after {
+          top: 10px;
+        }
+        &:before, &:after {
+          height: 4px;
+          width: 35px;
+          border-radius: 2px;
+          background-color: $dark-gray;
+          position: absolute;
+          content: "";
+          transition: all .2s ease-in-out;
+        }
+      }
+      &:hover span, &:hover span:before, &:hover span:after {
+        background: #333332;
+      }
+    }
+    input[type=checkbox] {
+      display: none;
+    }
+    input[type=checkbox]:checked ~ #overlay {
+      visibility: visible;
+    }
+    input[type=checkbox]:checked ~ #overlay-button {
+      &:hover span, span{
+        background: transparent;
+      }
+      span {
+        &:before {
+          transform: rotate(45deg) translate(7px, 7px);
+          opacity: 1;
+        }
+        &:after {
+          transform: rotate(-45deg) translate(7px, -7px);
+        }
+      }
+    }
+    #overlay {
+      height: 100vh;
+      width: 100vw;
+      background: $turquoise;
+      z-index: 2;
+      visibility: hidden;
+      position: fixed;
+      &.active {
+        visibility: visible;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        padding-left: 0;
+        list-style-type: none;
+        li {
+          padding: 1em;
+          a {
+            color: $white;
+            text-decoration: none;
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Desktop nav
+.nav-desktop {
+  height: 80px;
+  .nav-left {
+    float: left;
+    img {
+      width: 155px;
+      margin-left: 150px;
+      margin-top: 25px;
+    }
+  }
+  .nav-right {
+    float: right;
+    list-style-type: none;
+    display: inline-flex;
+    text-transform: uppercase;
+    margin-right: 135px;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 40px;
+    li {
+      margin: 0 15px;
+      button {
+        font-family: 'Museo 500';
+        font-size: 14px;
+        height: 40px;
+        width: 110px;
+        background-color: $white;
+        color: #5ec0bd;
+        border: 1px solid #5ec0bd;
+        border-radius: 2px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+// Media queries
+@media (max-width: 1000px) {
+  .nav-desktop {
+    .nav-left {
+      img {
+        margin-left: 50px;
+      }
+    }
+    .nav-right {
+      margin-right: 50px;
+    }
+  }
+}
+
+// Hides desktop nav for small screens
+@media (max-width: 755px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+// Hides mobile nav for large screens
+@media (min-width: 756px) {
+  .nav-mobile {
+    display: none;
+  }
+}

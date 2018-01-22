@@ -1,3 +1,222 @@
+@font-face {
+  font-family: 'Museo 500';
+  src: url("../assets/fonts/MuseoSans_500.otf"); }
+@font-face {
+  font-family: 'Museo 300';
+  src: url("../assets/fonts/MuseoSans-300.otf"); }
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("../assets/fonts/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../assets/fonts/OpenSans-Regular.ttf"); }
+body {
+  padding: 0;
+  margin: 0; }
 
+h1 {
+  font-family: 'Museo 300'; }
+
+h2, a {
+  font-family: 'Museo 500'; }
+
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #565659; }
+
+h5, p {
+  font-family: 'Open Sans Light', Helvetica, sans-serif; }
+
+.nav-mobile {
+  height: 80px;
+  background-color: #fff; }
+  .nav-mobile .nav-left {
+    float: left; }
+    .nav-mobile .nav-left img {
+      width: 120px;
+      margin-left: 40px;
+      margin-top: 25px; }
+  .nav-mobile .nav-right body {
+    -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+  .nav-mobile .nav-right #overlay-button {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none; }
+    .nav-mobile .nav-right #overlay-button span {
+      height: 4px;
+      width: 35px;
+      border-radius: 2px;
+      background-color: #565659;
+      position: relative;
+      display: block;
+      transition: all .2s ease-in-out; }
+      .nav-mobile .nav-right #overlay-button span:before {
+        top: -10px;
+        visibility: visible; }
+      .nav-mobile .nav-right #overlay-button span:after {
+        top: 10px; }
+      .nav-mobile .nav-right #overlay-button span:before, .nav-mobile .nav-right #overlay-button span:after {
+        height: 4px;
+        width: 35px;
+        border-radius: 2px;
+        background-color: #565659;
+        position: absolute;
+        content: "";
+        transition: all .2s ease-in-out; }
+    .nav-mobile .nav-right #overlay-button:hover span, .nav-mobile .nav-right #overlay-button:hover span:before, .nav-mobile .nav-right #overlay-button:hover span:after {
+      background: #333332; }
+  .nav-mobile .nav-right input[type=checkbox] {
+    display: none; }
+  .nav-mobile .nav-right input[type=checkbox]:checked ~ #overlay {
+    visibility: visible; }
+  .nav-mobile .nav-right input[type=checkbox]:checked ~ #overlay-button:hover span, .nav-mobile .nav-right input[type=checkbox]:checked ~ #overlay-button span {
+    background: transparent; }
+  .nav-mobile .nav-right input[type=checkbox]:checked ~ #overlay-button span:before {
+    transform: rotate(45deg) translate(7px, 7px);
+    opacity: 1; }
+  .nav-mobile .nav-right input[type=checkbox]:checked ~ #overlay-button span:after {
+    transform: rotate(-45deg) translate(7px, -7px); }
+  .nav-mobile .nav-right #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #5bc0c3;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed; }
+    .nav-mobile .nav-right #overlay.active {
+      visibility: visible; }
+    .nav-mobile .nav-right #overlay ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      height: 100vh;
+      padding-left: 0;
+      list-style-type: none; }
+      .nav-mobile .nav-right #overlay ul li {
+        padding: 1em; }
+        .nav-mobile .nav-right #overlay ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.5em; }
+
+.nav-desktop {
+  height: 80px; }
+  .nav-desktop .nav-left {
+    float: left; }
+    .nav-desktop .nav-left img {
+      width: 155px;
+      margin-left: 150px;
+      margin-top: 25px; }
+  .nav-desktop .nav-right {
+    float: right;
+    list-style-type: none;
+    display: inline-flex;
+    text-transform: uppercase;
+    margin-right: 135px;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 40px; }
+    .nav-desktop .nav-right li {
+      margin: 0 15px; }
+      .nav-desktop .nav-right li button {
+        font-family: 'Museo 500';
+        font-size: 14px;
+        height: 40px;
+        width: 110px;
+        background-color: #fff;
+        color: #5ec0bd;
+        border: 1px solid #5ec0bd;
+        border-radius: 2px;
+        text-transform: uppercase; }
+
+@media (max-width: 1000px) {
+  .nav-desktop .nav-left img {
+    margin-left: 50px; }
+  .nav-desktop .nav-right {
+    margin-right: 50px; } }
+@media (max-width: 755px) {
+  .nav-desktop {
+    display: none; } }
+@media (min-width: 756px) {
+  .nav-mobile {
+    display: none; } }
+.hero {
+  height: 460px;
+  background-image: url("../../assets/img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 1px; }
+  .hero .text-container {
+    padding-top: 25px; }
+    .hero .text-container h1 {
+      text-transform: uppercase;
+      font-size: 55px;
+      margin-bottom: -20px; }
+    .hero .text-container h5, .hero .text-container p {
+      max-width: 600px;
+      margin: 30px auto 0 auto; }
+    .hero .text-container h5 {
+      font-size: 18px; }
+    .hero .text-container p {
+      font-size: 14px; }
+
+@media (max-width: 845px) {
+  .hero .text-container h1 {
+    font-size: 40px; } }
+@media (max-width: 666px) {
+  .hero .text-container h5, .hero .text-container p {
+    max-width: 500px; } }
+@media (max-width: 484px) {
+  .hero .text-container h1 {
+    font-size: 30px; }
+  .hero .text-container h5, .hero .text-container p {
+    max-width: 400px; } }
+@media (max-width: 420px) {
+  .hero .text-container {
+    padding-top: 10px; }
+    .hero .text-container h5, .hero .text-container p {
+      max-width: 350px; } }
+.event {
+  height: 116px;
+  background-color: #f1f2f5;
+  color: #565659; }
+  .event .event-left {
+    float: left;
+    margin-left: 112px; }
+    .event .event-left h2 {
+      font-size: 16px;
+      margin-top: 30px; }
+      .event .event-left h2 span {
+        color: #5bc0c3; }
+    .event .event-left p {
+      font-size: 14px; }
+  .event .event-right {
+    float: right;
+    margin-right: 95px; }
+    .event .event-right button {
+      margin-top: 40px;
+      font-family: 'Museo 500';
+      font-size: 14px;
+      color: #fff;
+      background-color: #5bc0c3;
+      border: 1px solid #5bc0c3;
+      border-radius: 2px;
+      height: 40px;
+      width: 104px;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=app.css.map */

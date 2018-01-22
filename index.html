@@ -7,14 +7,64 @@
     <title>Open Charity</title>
   </head>
   <body>
-    <div class="nav">
+    <!-- mobile nav -->
+    <div class="nav-mobile">
+      <div class="nav-left">
+        <a href="#"><img src="assets/img/oc-logo.png"></a>
+      </div>
+      <div class="nav-right">
+        <input type="checkbox" id="overlay-input" />
+        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <div id="overlay">
+          <ul>
+            <li><a href="#">About Open Charity</a></li>
+            <li><a href="#">The Blog</a></li>
+            <li><a href="#">Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- desktop nav -->
+    <div class="nav-desktop">
       <div class="nav-left">
         <a href="#"><img src="assets/img/oc-logo.png"></a>
       </div>
       <ul class="nav-right">
-
+        <li><a href="#">About Open Charity</a></li>
+        <li><a href="#">The Blog</a></li>
+        <li><button type="button" name="button" href="#">Join Us</button></li>
       </ul>
     </div>
+
+    <!-- hero -->
+    <div class="hero">
+      <div class="text-container">
+        <h1>Sharing Ideas for Charities</h1>
+        <h5>
+          Many charities' goals are similar, as is the functionality we require, but little
+          shared working takes place.
+        </h5>
+        <p>
+          By working together, driving shared areas of interest and influencing open source
+           developments we can bring efficiencies, improve the digital experience for our users, and
+          have great impact.
+        </p>
+        <h5>Together, we can make a bigger difference.</h5>
+      </div>
+    </div>
+
+    <!-- next event -->
+    <div class="event">
+      <div class="event-left">
+        <h2><span>Next Event:</span> June 23rd 2016 18:30-21:00</h2>
+        <p>Cancer Research UK, Angel Building, 407 John Street, London EC1V 4AD</p>
+      </div>
+      <div class="event-right">
+        <button type="button" name="button" href="#">Register</button>
+      </div>
+    </div>
+
 
   </body>
 </html>
