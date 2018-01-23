@@ -2691,6 +2691,20 @@ button:focus {
       margin-top: 40px; }
     .mission .flex-grid-fifths .circle-logo {
       max-width: 85px; }
+  .mission .nav-circles {
+    display: inline-flex;
+    margin: 40px auto 0 auto;
+    list-style: none; }
+    .mission .nav-circles .circle {
+      width: 10px;
+      height: 10px;
+      background-color: #979eb2;
+      border: 1px solid #979eb2;
+      border-radius: 50%;
+      margin: 5px; }
+    .mission .nav-circles .circle-active {
+      background-color: #5bc0c3;
+      border: 1px solid #5bc0c3; }
 
 @media (max-width: 1245px) {
   .mission .flex-grid-thirds, .mission .flex-grid-fifths {

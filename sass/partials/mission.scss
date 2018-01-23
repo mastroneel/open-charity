@@ -81,6 +81,23 @@
       max-width: 85px;
     }
   }
+  .nav-circles {
+    display: inline-flex;
+    margin: 40px auto 0 auto;
+    list-style: none;
+    .circle {
+      width: 10px;
+      height: 10px;
+      background-color: #979eb2;
+      border: 1px solid #979eb2;
+      border-radius: 50%;
+      margin: 5px;
+    }
+    .circle-active {
+      background-color: $turquoise;
+      border: 1px solid $turquoise;
+    }
+  }
 }
 
 
