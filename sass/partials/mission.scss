@@ -1,0 +1,168 @@
+.mission {
+  background-color: $light-gray;
+  text-align: center;
+  padding: 20px 0 40px 0;
+  h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+  }
+  h1, h2, p {
+    color: $dark-gray;
+  }
+  h2 {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .flex-grid {
+    display: flex;
+    .col {
+      flex: 1;
+    }
+  }
+  .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-right: 145px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #d9dadd;
+    .col {
+      width: 32%;
+    }
+    h1 {
+      font-size: 16px;
+      text-transform: none;
+      color: $turquoise;
+      margin-top: 10px;
+    }
+    .text-container {
+      background-color: $white;
+      height: 175px;
+      margin-top: -55px;
+      padding: 50px 20px 0 20px;
+    }
+    .col {
+      padding: 20px;
+    }
+    img {
+      height: 100px;
+      width: 100px;
+      border: 10px solid $white;
+      border-radius: 50%;
+    }
+  }
+  .flex-grid {
+    margin: 0 0 20px 0;
+  }
+  .flex-grid-fifths {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-right: 145px;
+    .col {
+      flex: 1 1 20%; /* The important bit */
+      width: 20%;
+      // min-width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      max-width: 150px;
+      margin-top: 40px;
+    }
+    .circle-logo {
+      max-width: 85px;
+    }
+  }
+}
+
+
+@media (max-width: 1245px) {
+  .mission {
+    .flex-grid-thirds, .flex-grid-fifths {
+      margin: 0 40px;
+    }
+  }
+}
+
+@media (max-width: 955px) {
+  .mission {
+    .flex-grid-fifths {
+      img {
+        max-width: 110px;
+      }
+    }
+  }
+}
+
+@media (max-width: 921px) {
+  .mission {
+    .flex-grid-thirds {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 817px) {
+  .mission {
+    .flex-grid,
+    .flex-grid-thirds {
+      display: block;
+      .col {
+        width: 60%;
+        margin: 0 auto 10px auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .mission {
+    .flex-grid-fifths {
+      display: block;
+      .col {
+        width: 100%;
+        img {
+          max-width: 150px;
+          margin-top: 60px;
+        }
+        .circle-logo{
+          max-width: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mission {
+    .flex-grid,
+    .flex-grid-thirds {
+      display: block;
+      .col {
+        width: 80%;
+        margin: 0 auto 10px auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .mission {
+    .flex-grid,
+    .flex-grid-thirds {
+      display: block;
+      .col {
+        width: 95%;
+        margin: 0 auto 10px auto;
+      }
+    }
+  }
+}

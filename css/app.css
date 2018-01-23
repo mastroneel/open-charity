@@ -2625,5 +2625,115 @@ button:focus {
     .get-involved .flex-grid-thirds .col {
       width: 100%;
       margin: 0 0 10px 0; } }
+.mission {
+  background-color: #f1f2f5;
+  text-align: center;
+  padding: 20px 0 40px 0; }
+  .mission h1 {
+    font-size: 26px;
+    text-transform: uppercase; }
+  .mission h1, .mission h2, .mission p {
+    color: #565659; }
+  .mission h2 {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .mission p {
+    font-size: 14px;
+    margin-top: 30px; }
+  .mission .flex-grid {
+    display: flex; }
+    .mission .flex-grid .col {
+      flex: 1; }
+  .mission .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-right: 145px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #d9dadd; }
+    .mission .flex-grid-thirds .col {
+      width: 32%; }
+    .mission .flex-grid-thirds h1 {
+      font-size: 16px;
+      text-transform: none;
+      color: #5bc0c3;
+      margin-top: 10px; }
+    .mission .flex-grid-thirds .text-container {
+      background-color: #fff;
+      height: 175px;
+      margin-top: -55px;
+      padding: 50px 20px 0 20px; }
+    .mission .flex-grid-thirds .col {
+      padding: 20px; }
+    .mission .flex-grid-thirds img {
+      height: 100px;
+      width: 100px;
+      border: 10px solid #fff;
+      border-radius: 50%; }
+  .mission .flex-grid {
+    margin: 0 0 20px 0; }
+  .mission .flex-grid-fifths {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-right: 145px; }
+    .mission .flex-grid-fifths .col {
+      flex: 1 1 20%;
+      /* The important bit */
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .mission .flex-grid-fifths img {
+      max-width: 150px;
+      margin-top: 40px; }
+    .mission .flex-grid-fifths .circle-logo {
+      max-width: 85px; }
+
+@media (max-width: 1245px) {
+  .mission .flex-grid-thirds, .mission .flex-grid-fifths {
+    margin: 0 40px; } }
+@media (max-width: 955px) {
+  .mission .flex-grid-fifths img {
+    max-width: 110px; } }
+@media (max-width: 921px) {
+  .mission .flex-grid-thirds {
+    margin: 0; } }
+@media (max-width: 817px) {
+  .mission .flex-grid,
+  .mission .flex-grid-thirds {
+    display: block; }
+    .mission .flex-grid .col,
+    .mission .flex-grid-thirds .col {
+      width: 60%;
+      margin: 0 auto 10px auto; } }
+@media (max-width: 750px) {
+  .mission .flex-grid-fifths {
+    display: block; }
+    .mission .flex-grid-fifths .col {
+      width: 100%; }
+      .mission .flex-grid-fifths .col img {
+        max-width: 150px;
+        margin-top: 60px; }
+      .mission .flex-grid-fifths .col .circle-logo {
+        max-width: 100px; } }
+@media (max-width: 600px) {
+  .mission .flex-grid,
+  .mission .flex-grid-thirds {
+    display: block; }
+    .mission .flex-grid .col,
+    .mission .flex-grid-thirds .col {
+      width: 80%;
+      margin: 0 auto 10px auto; } }
+@media (max-width: 430px) {
+  .mission .flex-grid,
+  .mission .flex-grid-thirds {
+    display: block; }
+    .mission .flex-grid .col,
+    .mission .flex-grid-thirds .col {
+      width: 95%;
+      margin: 0 auto 10px auto; } }
 
 /*# sourceMappingURL=app.css.map */
