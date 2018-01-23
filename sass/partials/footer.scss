@@ -1,0 +1,32 @@
+.footer {
+  min-height: 140px;
+  background-color: $footer-gray;
+  text-align: center;
+  margin-top: -2px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  ul {
+    list-style: none;
+    display: inline-flex;
+    i {
+      color: $turquoise;
+      margin: 10px;
+      font-size: 20px;
+    }
+  }
+  .underline {
+    height: 0;
+    border-bottom: 1px solid #575a63;
+    margin: 0 155px;
+  }
+  p {
+    color: #969eb7;
+    font-size: 14px;
+    margin-top: 25px;
+    a, a:visited, a:hover {
+      color: $turquoise;
+      text-decoration: none;
+      font-family: 'Open Sans Light';
+    }
+  }
+}

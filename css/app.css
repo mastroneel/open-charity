@@ -2628,7 +2628,8 @@ button:focus {
 .mission {
   background-color: #f1f2f5;
   text-align: center;
-  padding: 20px 0 40px 0; }
+  padding: 20px 0 350px 0;
+  margin-bottom: -200px; }
   .mission h1 {
     font-size: 26px;
     text-transform: uppercase; }
@@ -2677,8 +2678,8 @@ button:focus {
   .mission .flex-grid-fifths {
     display: flex;
     justify-content: space-between;
-    margin-left: 145px;
-    margin-right: 145px; }
+    margin-left: 125px;
+    margin-right: 125px; }
     .mission .flex-grid-fifths .col {
       flex: 1 1 20%;
       /* The important bit */
@@ -2691,6 +2692,8 @@ button:focus {
       margin-top: 40px; }
     .mission .flex-grid-fifths .circle-logo {
       max-width: 85px; }
+  .mission ul {
+    -webkit-padding-start: 0px; }
   .mission .nav-circles {
     display: inline-flex;
     margin: 40px auto 0 auto;
@@ -2749,5 +2752,103 @@ button:focus {
     .mission .flex-grid-thirds .col {
       width: 95%;
       margin: 0 auto 10px auto; } }
+.blog {
+  height: 312px;
+  background-color: #fff;
+  margin: 0 80px;
+  padding-top: 20px; }
+  .blog h1 {
+    color: #565659;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 26px; }
+  .blog .flex-grid-fourths {
+    display: flex;
+    justify-content: space-between; }
+    .blog .flex-grid-fourths .col-arrow {
+      width: 5%;
+      text-align: center; }
+      .blog .flex-grid-fourths .col-arrow i {
+        font-size: 40px;
+        color: #5bc0c3;
+        margin-top: 80px; }
+    .blog .flex-grid-fourths .col {
+      width: 21%;
+      margin-top: 10px; }
+      .blog .flex-grid-fourths .col h2 {
+        color: #5bc0c3;
+        font-size: 16px; }
+      .blog .flex-grid-fourths .col p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #565659;
+        font-family: 'Open Sans'; }
+
+.blog-background {
+  height: 185px;
+  background-color: #aeaeb0;
+  margin-bottom: -310px; }
+
+@media (max-width: 1161px) {
+  .blog {
+    margin: 0 15px; } }
+@media (max-width: 978px) {
+  .blog-background {
+    height: 730px;
+    margin-bottom: -830px; }
+
+  .blog {
+    margin: 0 100px;
+    height: 830px;
+    padding-bottom: 40px; }
+    .blog .flex-grid-fourths {
+      display: block;
+      padding: 0 40px; }
+      .blog .flex-grid-fourths .col-arrow {
+        display: none; }
+      .blog .flex-grid-fourths .col {
+        width: 80%;
+        margin: 0 auto; }
+        .blog .flex-grid-fourths .col h2 {
+          margin-top: 40px; } }
+@media (max-width: 640px) {
+  .blog {
+    margin: 0 60px; } }
+@media (max-width: 565px) {
+  .blog {
+    margin: 0 20px; } }
+@media (max-width: 482px) {
+  .blog {
+    margin: 0 5px; }
+    .blog .flex-grid-fourths {
+      padding: 0 10px; }
+      .blog .flex-grid-fourths .col {
+        width: 100%; } }
+.footer {
+  min-height: 140px;
+  background-color: #45484f;
+  text-align: center;
+  margin-top: -2px;
+  padding-top: 10px;
+  padding-bottom: 40px; }
+  .footer ul {
+    list-style: none;
+    display: inline-flex; }
+    .footer ul i {
+      color: #5bc0c3;
+      margin: 10px;
+      font-size: 20px; }
+  .footer .underline {
+    height: 0;
+    border-bottom: 1px solid #575a63;
+    margin: 0 155px; }
+  .footer p {
+    color: #969eb7;
+    font-size: 14px;
+    margin-top: 25px; }
+    .footer p a, .footer p a:visited, .footer p a:hover {
+      color: #5bc0c3;
+      text-decoration: none;
+      font-family: 'Open Sans Light'; }
 
 /*# sourceMappingURL=app.css.map */
