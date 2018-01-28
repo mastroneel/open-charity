@@ -6,6 +6,7 @@
   padding-top: 10px;
   padding-bottom: 40px;
   ul {
+    -webkit-padding-start: 0px;
     list-style: none;
     display: inline-flex;
     i {
@@ -27,6 +28,14 @@
       color: $turquoise;
       text-decoration: none;
       font-family: 'Open Sans Light';
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    .underline {
+      margin: 0 25px;
     }
   }
 }
